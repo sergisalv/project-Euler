@@ -9,6 +9,8 @@ public class ProjectEuler3 {
         Long num = 600851475143L;
         //Numero primo
         int primeNum;
+        //Numero Primo mayor
+        int highestNPrimNum = 0;
 
 
         // Dividimos entre 2 y los sucesivos número
@@ -17,6 +19,7 @@ public class ProjectEuler3 {
             //Dividimos el número entre el que nos de como resultado 0 (Puesto que solo es divisible por ese número y por 1)
             while (num % primeNum == 0){
                 num /= primeNum;
+
             }
         }
 
