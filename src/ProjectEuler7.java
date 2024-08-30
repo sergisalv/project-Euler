@@ -7,18 +7,21 @@ public class ProjectEuler7 {
     }
 
     //Comprobar si un número es primo
-    public static boolean isPrime(int n){
-
-            //revisa si n es multiplo de 2
-            if (n%2==0) return false;
+        public static boolean isPrime(int n){
+            if (n == 2){
+                return true;
+            }
+            //revisa si n es multiplo de 2 o es 1
+            if (n%2==0 || n==1) return false;
             //si no, solo revisa los impares (se calcula i*i <= n porque si el cuadrado del número primo es mayor ya hemos terminado)
             for(int i=3;i*i<=n;i+=2) {
                 if(n%i==0)
                     return false;
             }
+
             return true;
 
-    }
+        }
 
     //Añadimos los número primos a un ArrayList
     public static Integer addAndCheckPrime(int numberOfPrime) {
