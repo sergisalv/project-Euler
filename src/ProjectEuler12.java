@@ -9,7 +9,7 @@ public class ProjectEuler12 {
     public static void triangularNumber() {
         //Vamos calculando todos los números triangulares
         long triangularNumber = 0L;
-        for (long i = 1; i >= i; i++) {
+       for (long i = 1; i >= i; i++) {
             triangularNumber += i;
             //Los enviamos a este método para calcular sus divisores
             divisor2(triangularNumber);
@@ -34,16 +34,10 @@ public class ProjectEuler12 {
         }
         //Si el array es mayor o igual a 500 imprimimos el número.
         if(list.size() >= 500){
-            System.out.println("El número es: " + numerous); //76576500
+            System.out.println("El número es: " + numerous);  //76576500
 
         }
 
-
-
     }
-
-
-
-
 
 }
