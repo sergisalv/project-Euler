@@ -12,19 +12,13 @@ public class ProjectEuler12 {
        for (long i = 1; i >= i; i++) {
             triangularNumber += i;
             //Los enviamos a este método para calcular sus divisores
-            divisor2(triangularNumber);
+            divisor(triangularNumber);
             }
         }
 
-
-
-
-
-
-    public static void divisor2(long numerous){
+    public static void divisor(long numerous){
         ArrayList<Long> list = new ArrayList<>();
         for(long i = 1 ; i <= numerous ; i++){
-            //ArrayList<Integer> list = new ArrayList<>();
             if(numerous%i==0){
                 //añadimos sus divisores al Array
                 list.add(i);
